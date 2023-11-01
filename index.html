@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mean & Standard Deviation</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="calculator.png">
+</head>
+
+<body>
+    <div class="spinner-container">
+        <div class="spinner"></div>
+    </div>
+    <section class="mean-standard-deviation-container  content-container hide-element">
+
+        <div class="header-container">
+            <h1 class="header">Mean & Standard Deviation</h1>
+            <img src="calculator.png" alt="icon" class="image">
+        </div>
+
+        <div class="container">
+
+            <div class="fields">
+                <label for="numbers">Enter Numbers (comma separated) Minimum of 3 and Maximum 10:</label>
+                <input type="text" class="field" id="numbers" placeholder="1,2,3,4,5...">
+            </div>
+
+            <div class="button-container">
+                <button class="button result-button" onclick="calculateMeanAndStandardDeviation()">Calculate</button>
+
+            </div>
+            <div class="result">
+
+                <h3>Result:</h3>
+                <p>Mean: <span id="mean"></span></p>
+                <p>Standard Deviation: <span id="standard-deviation"></span></p>
+
+            </div>
+        </div>
+
+    </section>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
