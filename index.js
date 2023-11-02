@@ -3,15 +3,17 @@ let numbersArray;
 let resultContainer = document.querySelector(".result");
 
 window.addEventListener("DOMContentLoaded", (event) => {
+    event.preventDefault();
+
     const spinnerContainer = document.querySelector(".spinner-container");
     const contentContainer = document.querySelector(".content-container");
     const body = document.body;
+
     setTimeout(() => {
         spinnerContainer.style.display = "none";
-
         contentContainer.classList.remove("hide-element");
         body.classList.remove("spinner-loader");
-    }, 2000)
+    }, 1500)
 
 })
 

@@ -17,14 +17,12 @@ body {
 
 .mean-standard-deviation-container {
     position: relative;
-    z-index: 10;
     padding: 20px;
     height: 100vh;
     display: grid;
     place-content: center;
     background: url(bg.svg) no-repeat;
     background-size: cover;
-
 }
 
 .header-container {
@@ -33,7 +31,6 @@ body {
     align-items: center;
     flex-wrap: wrap;
     gap: 10px;
-
 }
 
 .header {
@@ -73,7 +70,6 @@ body {
 }
 
 .button {
-
     position: relative;
     min-width: 20%;
     margin-top: 12px;
@@ -84,11 +80,11 @@ body {
     border-radius: 2px;
     font-weight: 800;
     transition: color 0.3s linear;
+    z-index: 1;
 }
 
 .button:hover {
     color: #fff;
-
 }
 
 .button::before {
@@ -100,7 +96,6 @@ body {
     height: 100%;
     background-color: #E11D48;
     transition: transform 0.5s;
-   
     z-index: -1;
 }
 
@@ -115,7 +110,6 @@ body {
 span {
     color: #E11D48;
     font-weight: 700;
-
 }
 
 .result {
